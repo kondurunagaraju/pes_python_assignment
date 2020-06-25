@@ -1,0 +1,50 @@
+# Python program to perform Addition Subtraction Multiplication
+# and Division of two numbers
+
+num1 = int(input("Enter First Number: "))
+num2 = int(input("Enter Second Number: "))
+
+ch = input ("Enter which operation would you like to perform (+,-,*,/)?")
+result = 0
+if ch == '+':
+    result = num1 + num2
+elif ch == '-':
+    result = num1 - num2
+elif ch == '*':
+    result = num1 * num2
+elif ch == '/':
+    result = num1 / num2
+else:
+    print("Input character is not recognized!")
+
+print(num1, ch , num2, " is :", result)
+
+
+Output:
+
+Enter First Number: 12
+Enter Second Number: 12
+Enter which operation would you like to perform (+,-,*,/)?/
+12 / 12  is : 1.0
+
+
+Enter First Number: 12
+Enter Second Number: 12
+Enter which operation would you like to perform (+,-,*,/)?+
+12 + 12  is : 24
+
+Enter First Number: 12
+Enter Second Number: 12
+Enter which operation would you like to perform (+,-,*,/)?*
+12 * 12  is : 144
+
+Enter First Number: 12
+Enter Second Number: 12
+Enter which operation would you like to perform (+,-,*,/)?-
+12 - 12  is : 0
+
+Enter First Number: 12
+Enter Second Number: 12
+Enter which operation would you like to perform (+,-,*,/)?@
+Input character is not recognized!
+
