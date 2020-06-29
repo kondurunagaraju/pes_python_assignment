@@ -1,0 +1,22 @@
+#9.Write program to Add , subtract, multiply, divide 2 complex numbers.
+import math
+a = 7+9j
+b = 3+5j
+
+print("a is : ",a)
+print("b is : ",b)
+
+print("Addition of above two complex numbers is : ",a+b)
+print("Subtraction of above two complex numbers is : ",a-b)
+print("Multiplication of above two complex numbers is : ",a*b)
+print("Division of above two complex numbers is : ",a/b)
+
+Output:
+---------
+
+a is :  (7+9j)
+b is :  (3+5j)
+Addition of above two complex numbers is :  (10+14j)
+Subtraction of above two complex numbers is :  (4+4j)
+Multiplication of above two complex numbers is :  (-24+62j)
+Division of above two complex numbers is :  (1.9411764705882353-0.2352941176470589j)
