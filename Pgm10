@@ -1,0 +1,34 @@
+#10.Using assignment operators, perform following operations
+# Addition, Substation, Multiplication, Division, Modulus, Exponent and Floor division operations
+import math
+a = float(input("Enter num1 : "))
+b = float(input("Enter num2 : "))
+
+add = a+b
+sub = b-a
+mult = a*b
+div = b/a
+mod = a%b
+exp = a**b
+floordiv = b//a
+
+print("Addition is : ", add)
+print("Subtraction is : ",sub)
+print("Multiplication is : ",mult)
+print("Division is : ",div)
+print("Modululo is : ",mod)
+print("Exponent is : ",exp)
+print("Floor division is : ",floordiv)
+
+Output :
+---------
+
+Enter num1 : 2.6
+Enter num2 : 4.5
+Addition is :  7.1
+Subtraction is :  1.9
+Multiplication is :  11.700000000000001
+Division is :  1.7307692307692306
+Modululo is :  2.6
+Exponent is :  73.68516593572957
+Floor division is :  1.0
