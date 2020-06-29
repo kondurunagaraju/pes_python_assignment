@@ -1,0 +1,29 @@
+import sys
+
+arg1,arg2,arg3,arg4,arg5=sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],sys.argv[5]
+print ("arg1=",arg1)
+print ("arg2=",arg2)
+print ("arg3=",arg3)
+print ("arg4=",arg4)
+print ("arg5=",arg5)
+
+arg13,arg14,arg15 = input("Enter 3 numbers : ").split()
+if arg13>arg14 and arg13>arg15:
+  print ("Biggest num is : ",arg13)
+elif arg14>arg13 and arg14>arg15:
+  print ("Biggest num is : ",arg14)
+else:
+  print ("Biggest num is : ",arg15)
+
+
+Output: 
+---------
+
+C:\Users\Konduru\PycharmProjects\GoodEx>Pgm5.py 1 2 3 4 5
+arg1= 1
+arg2= 2
+arg3= 3
+arg4= 4
+arg5= 5
+Enter 3 numbers : 11 14 1
+Biggest num is :  14
