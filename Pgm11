@@ -1,0 +1,36 @@
+#11.Read 2 numbers to variable a and b and perform all bitwise operations on that numbers.
+
+import math
+
+a = int(input("Enter num1 : "))
+b = int(input("Enter Num2 : "))
+
+c = a & b
+print("Value of a&b is : ", c)
+
+c = a | b
+print("Value of  a|b is : ", c)
+
+c = a ^ b
+print("Value of a^b is : ", c)
+
+c = ~a
+print("Value of ~a is : ", c)
+
+c = a << 2
+print("Value of  a<<2 is : ", c)
+
+c = a >> 2
+print("Value of a>>2 is : ", c)
+
+Output:
+---------
+
+Enter num1 : 5
+Enter Num2 : 7
+Value of a&b is :  5
+Value of  a|b is :  7
+Value of a^b is :  2
+Value of ~a is :  -6
+Value of  a<<2 is :  20
+Value of a>>2 is :  1
