@@ -1,0 +1,30 @@
+#Basic String operations
+#6.Write a program to read string and print each character separately.
+#a) Slice the string using slice operator [:] slice the portion the strings to create a sub strings.
+#b) Repeat the string 100 times using repeat operator *
+#c) Read strig 2 and concatenate with other string using + operator.
+
+str1 = input("Enter the string : ")
+for i in str1:
+  print (i)
+
+str2=str1[1:-1]
+print ("Substring of String1 is : ",str2)
+print ("String1 100 times : ",str1*100)
+str3 = input("Enter the string : ")
+str4 = str1 + str3
+print ("New String with Concatenation is : ",str4)
+
+
+Output :
+---------
+
+Enter the string : Naga
+N
+a
+g
+a
+Substring of String1 is :  ag
+String1 100 times :  NagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNagaNaga
+Enter the string : raju
+New String with Concatenation is :  Nagaraju
