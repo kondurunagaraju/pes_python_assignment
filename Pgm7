@@ -1,0 +1,29 @@
+#7.Create a list with at least 10 elements in it
+  #print all elements
+  #perform slicing
+  #perform repetition with * operator
+  #Perform concatenation wiht other list.
+
+str1=input("Enter the list1 : ")
+list1=list(str1)
+
+print ("List1 is : ",list1)
+list2=list(input("Enter the list2 : "))
+print ("List2 is : ",list2)
+print ("List1[1:2] is : ",list1[1:2])
+print ("list2[1:-1] is : ",list2[1:-1])
+print ("List1*2 is : ",list1*2)
+print ("List1+List2 is : ",list1+list2)
+
+
+Output : 
+--------
+
+Enter the list1 : 123
+List1 is :  ['1', '2', '3']
+Enter the list2 : 456
+List2 is :  ['4', '5', '6']
+List1[1:2] is :  ['2']
+list2[1:-1] is :  ['5']
+List1*2 is :  ['1', '2', '3', '1', '2', '3']
+List1+List2 is :  ['1', '2', '3', '4', '5', '6']
