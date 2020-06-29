@@ -1,0 +1,16 @@
+import sys
+
+arg1,arg2,arg3 = sys.argv[1],sys.argv[2],sys.argv[3]
+
+if arg1>arg2 and arg1>arg3:
+  print ("Biggest num is : ",arg1)
+elif arg2>arg1 and arg2>arg3:
+  print ("Biggest num is : ",arg2)
+else:
+  print ("Biggest num is : ",arg3)
+  
+Output :
+--------
+
+C:\Users\Konduru\PycharmProjects\GoodEx>Pgm5b.py 19 14 22
+Biggest num is :  22
