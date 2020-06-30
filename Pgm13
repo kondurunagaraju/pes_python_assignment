@@ -1,0 +1,44 @@
+#13.Write a program to find the biggest of 4 numbers.
+# a) Read 4 numbers from user using Input statement.
+# b) extend the above program to find the biggest of 5 numbers.
+# ( PS : Use IF and IF & Else , If and ELIf, and Nested IF )
+
+a, b, c, d = [int(x) for x in input("Enter 4 values: ").split()]
+greatest=0
+
+if (a>b)&(a>c)&(a>d):
+    print("Greatest no of the first 4 is : ",a)
+    greatest = a
+
+elif (b>a)&(b>c)&(b>d):
+    print("Greatest no of the first 4 is : ",b)
+    greatest = b
+
+elif (c>a)&(c>b)&(c>d):
+    print("Greatest no of the first 4 is : ",c)
+    greatest = c
+else:
+    print("Greatest no of the first 4 is : ",d)
+    greatest = d
+
+e = int(input("Enter 5th number : "))
+
+if(e > greatest):
+    print("The greatest of all 5 nos is : ",e)
+else:
+    print("Fifth number is smaller than the greatest number of first 4 numbers.")
+    
+    
+Output :
+---------
+
+Enter 4 values: 11 22 44 33
+Greatest no of the first 4 is :  44
+Enter 5th number : 12
+Fifth number is smaller than the greatest number of first 4 numbers.
+
+
+Enter 4 values: 11 22 44 33
+Greatest no of the first 4 is :  44
+Enter 5th number : 55
+The greatest of all 5 nos is :  55
