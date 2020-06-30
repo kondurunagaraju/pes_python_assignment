@@ -1,0 +1,64 @@
+# 14.Write a program to create two list A and B such that List A contains Employee Id,
+# List B contains Employee name ( minimum 10 entries in each list ) and perform following operations
+# a) Print all names on to screen
+# b) Read the index from the user and print the corresponding name from both list.
+# c) Print the names from 4th position to 9th position
+# d) Print all names from 3rd position till end of the list
+# e) Repeat list elements by specified number of times ( N- times, where N is entered by user)
+# f) Concatenate two lists and print the output.
+# g) Print element of list A and B side by side.( i.e. List-A First element , List-B First element )
+
+EId = [101,102,103,104,105,106,107,108,109,110]
+State = ['Andhra','Tamilnadu','Delhi','Karnataka','Gujarat','Odissa','Assam','Bihar','Telangana','UttarPradesh']
+
+print("All the list elements are : ",State)
+index=int(input("Enter the index to read from list : "))
+
+print("The ",index," element of state list is : ",State[index-1])
+print("The ",index," element of EId list is : ",EId[index-1])
+
+print("List of 4th to 9th index is : ",State[3:9])
+print("List from 3rd index till end of list is : ",State[2:])
+
+ntime=int(input("Enter the no of times you wish to repeat the list : "))
+
+print("EId list print ",ntime," times ")
+print(EId*ntime)
+
+print("State list print ",ntime," times")
+print(State*ntime)
+
+
+concatList = (EId+State)
+print("Concatenation of EId list and State list is : ")
+print(concatList)
+for element in range(len(EId)):
+  print("Eid element",EId[element],"State elements",State[element])
+  
+  
+Output:
+--------
+
+All the list elements are :  ['Andhra', 'Tamilnadu', 'Delhi', 'Karnataka', 'Gujarat', 'Odissa', 'Assam', 'Bihar', 'Telangana', 'UttarPradesh']
+Enter the index to read from list : 2
+The  2  element of state list is :  Tamilnadu
+The  2  element of EId list is :  102
+List of 4th to 9th index is :  ['Karnataka', 'Gujarat', 'Odissa', 'Assam', 'Bihar', 'Telangana']
+List from 3rd index till end of list is :  ['Delhi', 'Karnataka', 'Gujarat', 'Odissa', 'Assam', 'Bihar', 'Telangana', 'UttarPradesh']
+Enter the no of times you wish to repeat the list : 2
+EId list print  2  times 
+[101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
+State list print  2  times
+['Andhra', 'Tamilnadu', 'Delhi', 'Karnataka', 'Gujarat', 'Odissa', 'Assam', 'Bihar', 'Telangana', 'UttarPradesh', 'Andhra', 'Tamilnadu', 'Delhi', 'Karnataka', 'Gujarat', 'Odissa', 'Assam', 'Bihar', 'Telangana', 'UttarPradesh']
+Concatenation of EId list and State list is : 
+[101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 'Andhra', 'Tamilnadu', 'Delhi', 'Karnataka', 'Gujarat', 'Odissa', 'Assam', 'Bihar', 'Telangana', 'UttarPradesh']
+Eid element 101 State elements Andhra
+Eid element 102 State elements Tamilnadu
+Eid element 103 State elements Delhi
+Eid element 104 State elements Karnataka
+Eid element 105 State elements Gujarat
+Eid element 106 State elements Odissa
+Eid element 107 State elements Assam
+Eid element 108 State elements Bihar
+Eid element 109 State elements Telangana
+Eid element 110 State elements UttarPradesh
