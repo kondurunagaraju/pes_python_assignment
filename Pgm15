@@ -1,0 +1,41 @@
+# 15.Create a list of 5 names and check given name exist in the List.
+# a) Use membership operator ( IN ) to check the presence of an element.
+# b) Perform above task without using membership operator.
+# c) Print the elements of the list in reverse direction.
+
+#a) Use membership operator ( IN ) to check the presence of an element.
+list=['Nagaraju','Kumar','Prasad','Siva','Sarath']
+#print list1
+name = input("whose name you want to search ? ")
+if (name) in list:
+  print(name, " is present in the list")
+else:
+  print(name," is not present in the list")
+
+#b) Perform above task without using membership operator.
+print("Performing above task without using membership operator.")
+for i in list:
+  if (i==name):
+    print(name," is present in the list")
+    break
+else:
+    print(name, " is not present in the list")
+
+#c) Print the elements of the list in reverse direction.
+list.reverse()
+print("List in the reverse order is : ",list)
+
+Output:
+--------
+
+whose name you want to search ? Kumar
+Kumar  is present in the list
+Performing above task without using membership operator.
+Kumar  is present in the list
+List in the reverse order is :  ['Sarath', 'Siva', 'Prasad', 'Kumar', 'Nagaraju']
+
+whose name you want to search ? Raama
+Raama  is not present in the list
+Performing above task without using membership operator.
+Raama  is not present in the list
+List in the reverse order is :  ['Sarath', 'Siva', 'Prasad', 'Kumar', 'Nagaraju']
